@@ -1,16 +1,28 @@
 <html>
     <head><title>UAP Hearings</title></head>
     <body>
-        <!--iframe class="video" width=1024 height=660 src='https://www.c-span.org/video/standalone/?529499-1/hearing-unidentified-anomalous-phenomena' allowfullscreen='allowfullscreen' frameborder=0></iframe-->
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/SpzJnrwob1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="aspect-ratio">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/SpzJnrwob1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </body>
     <style>
-        .video {
+        body {
+            background-color: #444;
+        }
+        .aspect-ratio {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56%;
+        }
+
+        
+        .aspect-ratio iframe {
             position: absolute;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
         }
     </style>
 </html>
